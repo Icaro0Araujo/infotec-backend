@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTec - Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container-top">
+            <a href="/" class="logo">InfoTec Hardware</a>
+            <a href="/cadastro" class="btn-top">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main class="box-container">
+        <div class="card-form">
+            <h2>Acessar Conta</h2>
+            <form action="/login" method="POST">
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="campo">
+                    <label>Senha</label>
+                    <input type="password" name="senha" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="btn-submit btn-verde">Entrar</button>
+            </form>
+            <p class="link-rodape">Não tem conta? <a href="/cadastro">Cadastre-se</a></p>
+        </div>
+    </main>
+</body>
+</html>

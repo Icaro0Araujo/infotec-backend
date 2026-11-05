@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTec - Painel Restrito</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container-top">
+            <a href="/painel" class="logo">InfoTec Admin</a>
+            <div>
+                <a href="/" class="btn-top" target="_blank">Ver Loja</a>
+                <a href="/logout" class="btn-top btn-sair">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-painel">
+        <div class="coluna-form">
+            <div class="card-form">
+                <h3>Novo Produto</h3>
+                <form action="/produtos/novo" method="POST">
+                    <div class="campo">
+                        <label>Nome do Produto</label>
+                        <input type="text" name="nome" placeholder="Ex: RTX 4060" required>
+                    </div>
+                    <div class="campo">
+                        <label>Preço (R$)</label>
+                        <input type="number" step="0.01" name="preco" placeholder="0.00" required>
+                    </div>
+                    <div class="campo">
+                        <label>Estoque</label>
+                        <input type="number" name="estoque" placeholder="0" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Salvar Produto</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

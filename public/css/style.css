@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Barra superior */
+.topbar {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container-top {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-top {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-top:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.btn-sair {
+    border-color: #dc3545;
+    background-color: #dc3545;
+}
+
+.btn-sair:hover {
+    background-color: #c82333;
+    color: #fff;
+}
+
+/* Centralização dos formulários de Login/Cadastro */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+}
+
+.card-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card-form h2, .card-form h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botões */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.btn-verde {
+    background-color: #28a745;
+}
+
+.btn-verde:hover {
+    background-color: #218838;
+}
+
+.link-rodape {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.link-rodape a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Layout do Painel */
+.container-painel {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+/* Estilos para a Vitrine de Produtos */
+.banner-loja {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.banner-loja h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.banner-loja p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.container-loja {
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+.container-loja h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-produto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-produto h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.card-produto p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-produto .preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-comprar:hover {
+    background-color: #218838;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #aaa;
+    font-size: 14px;
+}
